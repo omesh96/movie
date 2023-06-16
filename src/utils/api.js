@@ -10,10 +10,11 @@
 
  export const fetchDataFromApi=async (url,params)=>{
     try{
-            const {data}=axios.get(BASE_URL+url,{
+            const data=axios.get(BASE_URL+url,{
                 headers,
                 params
             })
+          
             return data;
     }
     catch(err){
